@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/textViewArtikelname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/artikelname"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/textViewAnzahl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/anzahl"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/textViewPreis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/preis"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/textViewKaufdatum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:text="@string/datum"
+        android:textSize="13sp"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="primaryColor">#6200EE</color>
+    <color name="primaryLightColor">#BB86FC</color>
+    <color name="blue">#3700B3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#121212</color>
+    <color name="grey">#7D7D7D</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="markieren">#03A9F4</color>
+</resources>

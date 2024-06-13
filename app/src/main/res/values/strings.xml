@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyShoppingList</string>
+    <string name="artikelname">Artikel</string>
+    <string name="anzahl">Anzahl</string>
+    <string name="preis">Preis</string>
+    <string name="datum">Datum</string>
+    <string name="artikel_anzahl_preis">Artikelname Anzahl Einzelpreis</string>
+</resources>
