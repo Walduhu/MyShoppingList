@@ -1,4 +1,4 @@
-# MyShoppingList - Eine App zum Erstellen einer Einkaufsliste
+# MyShoppingList - Eine Android-App zum Erstellen einer Einkaufsliste
 
 Der User kann Artikel, deren Anzahl und deren (vor dem Einkauf geschätzte) Einzelpreise mit einem Leerzeichen getrennt eingeben und mit dem grünen (+)-Button zur Liste hinzufügen.<br>
 Einmal hinzugefügt, werden in der Spalte "Preis" je das Produkt aus Anzahl und Einzelpreisen angezeigt.<br>
