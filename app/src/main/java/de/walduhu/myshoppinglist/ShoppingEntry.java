@@ -6,10 +6,10 @@ import java.util.Calendar;
 
 public class ShoppingEntry {
 
-    private String artikel;
-    private int anzahl;
-    private double preis;
-    private Calendar datum;
+    private final String artikel;
+    private final int anzahl;
+    private final double preis;
+    private final Calendar datum;
 
     public ShoppingEntry(String artikelname, int anzahl, double preis, Calendar datum) {
         this.artikel = artikelname;

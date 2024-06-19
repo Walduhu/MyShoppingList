@@ -69,7 +69,7 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             itemHolder.textViewDatum.setText(se.getFormattedDate());
 
             // gewähltes Element markieren
-            itemHolder.itemView.setBackgroundColor(selectedPosition == position ? itemHolder.itemView.getContext().getColor(R.color.markieren) : Color.TRANSPARENT);
+            itemHolder.itemView.setBackgroundColor(selectedPosition == position ? itemHolder.itemView.getContext().getColor(R.color.lightblue) : Color.TRANSPARENT);
 
             itemHolder.itemView.setOnClickListener(v -> {
                 notifyItemChanged(selectedPosition);
@@ -95,14 +95,14 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     @Override
     public int getItemCount() {
-        return shoppingEntryArrayList.size() + 2; // +1 für den Tabellenkopf, +1 für die Summe
+        return shoppingEntryArrayList.size() + 2; // +1 für Tabellenkopf, +1 für Summe
     }
 
     public void removeItem() {
         if (selectedPosition != RecyclerView.NO_POSITION) {
-            shoppingEntryArrayList.remove(selectedPosition - 1); // minus 1 für Tabellenkopf
+            shoppingEntryArrayList.remove(selectedPosition - 1); // -1 für Tabellenkopf
             notifyItemRemoved(selectedPosition);
-            notifyItemChanged(shoppingEntryArrayList.size() + 1); // Benachrichtige SumViewHolder
+            notifyItemChanged(shoppingEntryArrayList.size() + 1); // SumViewHolder benachrichtigen
             selectedPosition = RecyclerView.NO_POSITION;
         }
     }

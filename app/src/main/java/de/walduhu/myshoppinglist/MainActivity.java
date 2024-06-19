@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(getApplicationContext(), "Bitte gültige Werte eingeben", Toast.LENGTH_SHORT).show();
                 }
             } else {
-                Toast.makeText(getApplicationContext(), "Bitte gültige Werte eingeben", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Bitte genau 3 Werte eingeben", Toast.LENGTH_SHORT).show();
             }
         } else if (v.getId() == deleteIB.getId()) {
             if (shoppingEntryArrayList.isEmpty()) {
