@@ -30,9 +30,7 @@ public class ShoppingEntry {
         return preis;
     }
 
-    // Methode um Datum zu formatieren
-    public String getFormattedDate() {
-        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
-        return sdf.format(datum.getTime());
+    public String getDatum() {
+        return datum;
     }
 }
