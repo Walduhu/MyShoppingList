@@ -119,7 +119,7 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             textViewArtikelname = view.findViewById(R.id.textViewArtikelname);
             textViewAnzahl = view.findViewById(R.id.textViewAnzahl);
             textViewPreis = view.findViewById(R.id.textViewPreis);
-            textViewDatum = view.findViewById(R.id.textViewKaufdatum);
+            textViewDatum = view.findViewById(R.id.textViewDatum);
         }
     }
 
