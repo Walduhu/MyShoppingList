@@ -54,10 +54,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     String artikel = eingabeWerte[0];
                     int anzahl = Integer.parseInt(eingabeWerte[1]);
                     double preis = Double.parseDouble(eingabeWerte[2].replace(",", "."));
-                    Calendar kaufdatum = Calendar.getInstance(); // heutiges Datum
+                    Calendar datum = Calendar.getInstance(); // heutiges Datum
 
                     // neues ShoppingEntry-Objekt erstellen
-                    ShoppingEntry neuerEintrag = new ShoppingEntry(artikel, anzahl, preis, kaufdatum);
+                    ShoppingEntry neuerEintrag = new ShoppingEntry(artikel, anzahl, preis, datum);
                     shoppingEntryArrayList.add(neuerEintrag);
 
                     // Adapter benachrichtigen
