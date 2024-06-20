@@ -1,7 +1,5 @@
 package de.walduhu.myshoppinglist;
 
-import android.annotation.SuppressLint;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class ShoppingEntry {
@@ -30,7 +28,7 @@ public class ShoppingEntry {
         return preis;
     }
 
-    public String getDatum() {
+    public Calendar getDatum() {
         return datum;
     }
 }
