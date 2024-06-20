@@ -56,7 +56,7 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         if (holder instanceof ShoppingListViewHolder) {
-            ShoppingEntry se = shoppingEntryArrayList.get(position - 1); // minus 1 für Tabellenkopf
+            ShoppingEntry se = shoppingEntryArrayList.get(position - 1); // -1 für Tabellenkopf
             ShoppingListViewHolder itemHolder = (ShoppingListViewHolder) holder;
             itemHolder.textViewArtikelname.setText(se.getArtikel());
             itemHolder.textViewAnzahl.setText(String.valueOf(se.getAnzahl()));
@@ -66,7 +66,9 @@ public class ShoppingListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             String formattedPrice = currencyFormat.format(se.getPreis() * se.getAnzahl());
             itemHolder.textViewPreis.setText(formattedPrice);
 
-            itemHolder.textViewDatum.setText(se.getFormattedDate());
+            // Datum formatieren
+            itemHolder.textViewDatum.setText(se.getDatum().get(Calendar.DAY_OF_MONTH)+"."+
+                    (se.getDatum().get(Calendar.MONTH)+1)+"."+se.getDatum().get(Calendar.YEAR));
 
             // gewähltes Element markieren
             itemHolder.itemView.setBackgroundColor(selectedPosition == position ? itemHolder.itemView.getContext().getColor(R.color.lightblue) : Color.TRANSPARENT);
